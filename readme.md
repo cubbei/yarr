@@ -1,3 +1,14 @@
+## About this fork
+
+This fork was created to handle subscriptions to Google Alert RSS feeds.  
+These uri's contain a url parameter in the link, which prevents the crawler from accessing the correct page when attempting to pull the page content during the 'Read here' event.  
+
+No other changes have been made to this project, for any questions on the project, please refer to [nkanaev](https://github.com/nkanaev)'s original [yarr](https://github.com/nkanaev/yarr) project.
+
+Full credit to [nkanaev](https://github.com/nkanaev) the original author.
+
+----
+
 # yarr
 
 **yarr** (yet another rss reader) is a web-based feed aggregator which can be used both
