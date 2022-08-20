@@ -105,7 +105,11 @@
       return api('post', './logout')
     },
     crawl: function(url) {
-      return api('get', './page?url_link=' + url).then(json)
+      if (url.contains("https://www.google.com/url?rct=j")) {
+        return api('get', './page?url_link=' + url).then(json)
+      } else {
+        return api('get', './page?url=' + url).then(json)
+      }
     }
   }
 })()
