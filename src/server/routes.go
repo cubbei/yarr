@@ -454,7 +454,7 @@ func (s *Server) handleOPMLExport(c *router.Context) {
 }
 
 func (s *Server) handlePageCrawl(c *router.Context) {
-	url := c.Req.URL.Query().Get("url")
+	url := c.Req.URL.Query().Get("url_link")
 
 	if content := silo.VideoIFrame(url); content != "" {
 		c.JSON(http.StatusOK, map[string]string{
