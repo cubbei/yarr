@@ -105,7 +105,7 @@
       return api('post', './logout')
     },
     crawl: function(url) {
-      if (`${url}`.contains("https://www.google.com/url?rct=j")) {
+      if (url.includes("https://www.google.com/url?rct=j")) {
         return api('get', './page?url_link=' + url).then(json)
       } else {
         return api('get', './page?url=' + url).then(json)
